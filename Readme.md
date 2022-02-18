@@ -32,3 +32,11 @@
 ### CP_08_material_perfect_reflect_gamma_correct
 ![image](CP_08_material_perfect_reflect_gamma_correct/image.jpg)
 
+
+
+### CP_09_glossy_reflect
+![image](CP_09_glossy_reflect/image.jpg)
+```
+auto material_left   = std::make_shared<PerfectReflection>(Color(0.8, 0.8, 0.8), 0.5);
+auto material_right  = std::make_shared<PerfectReflection>(Color(0.8, 0.6, 0.2),1);
+```
