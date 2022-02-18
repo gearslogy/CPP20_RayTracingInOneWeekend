@@ -2,7 +2,7 @@
 * C++ 20 
 * progress wip
 * high performance rendering with threading blocks & std::async
-
+* C++ faster random engine with CRTP + singleton
 
 ### CP_04_sphere_normal_hittable
 
@@ -40,3 +40,15 @@
 auto material_left   = std::make_shared<PerfectReflection>(Color(0.8, 0.8, 0.8), 0.5);
 auto material_right  = std::make_shared<PerfectReflection>(Color(0.8, 0.6, 0.2),1);
 ```
+render dt:100s, 100samplers, width=1280
+
+
+* cos-weighted hemisphere is another choice, but need check the glossy reflected vector  is not entering the sphere
+* (red is reflected vector)
+
+![image](CP_09_glossy_reflect/hemisphere.png)
+
+"raytracing in one weekend" is solves that problem. because it used this method:
+
+![image](CP_09_glossy_reflect/sphere_random_reflection.png)
+
