@@ -52,3 +52,18 @@ render dt:100s, 100samplers, width=1280
 
 ![image](CP_09_glossy_reflect/sphere_random_reflection.png)
 
+## CP_10_refract
+![image](CP_10_refract/image.jpg)
+
+render time dt: 103s
+* 折射向量推导
+* 全内折射
+* fresnel 多项式逼近
+
+![image](CP_10_refract/refract.png)
+
+![image](CP_10_refract/schlick.png)
+
+![image](CP_10_refract/Total_Internal_Reflection.png)
+
+
