@@ -66,4 +66,12 @@ render time dt: 103s
 
 ![image](CP_10_refract/Total_Internal_Reflection.png)
 
+## CP_11 vertical field-of-view 
 
+vfov:45
+
+![image](CP_11_fov/vfov45.jpg)
+
+vfov:90
+
+![image](CP_11_fov/vfov90.jpg)
