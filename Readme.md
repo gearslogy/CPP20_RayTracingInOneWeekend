@@ -79,6 +79,10 @@ vfov:90
 ## CP_12_lookfrom_lookat
 
 ![image](CP_12_lookfrom_lookat/image.jpg)
+![image](CP_12_lookfrom_lookat/imageFov20.jpg)
+
+* first image is fov:90
+* second is fov:20
 
 we can visualize all the scene in hou grandpa :
 
