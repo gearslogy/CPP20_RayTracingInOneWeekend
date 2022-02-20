@@ -92,7 +92,7 @@ we can visualize all the scene in hou grandpa :
 
 ![image](CP_12_lookfrom_lookat/lookat.png)
 
-viewport vex code: unit_disk_xy_sample.hip , defocus project also need this to visualize.
+viewport vex code: unit_disk_xy_sample.hip:
 ```c++
 float aspectWHRatio = 16.0 / 9; 
 float theta = radians(90);
