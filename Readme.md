@@ -59,6 +59,14 @@ render time dt: 103s
 * 折射向量推导
 * 全内折射
 * fresnel 多项式逼近
+* **_上个图搞错了，原作者的折射率就是描述物体内部，我这个搞成外/内。所以折射率最后不是1.5 而是 1/1.5_** 
+* main.cpp ior problem:
+```c++
+auto material_left   = std::make_shared<Dielectric>(1,1.5); // IOR = 1/1.5
+// should change it to:
+auto material_left   = std::make_shared<Dielectric>(1.5); // IOR = 1.5
+```
+* _**在材质里用默认一个参数的吧**_
 
 ![image](CP_10_refract/refract.png)
 
