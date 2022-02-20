@@ -134,3 +134,20 @@ all scene:
 
 ![image](CP_12_lookfrom_lookat/scene.png)
 
+
+
+## CP_13_defocus
+
+* follow the author: 
+* render dt:137s:
+
+![image](CP_13_defocus/book_defocus.jpg)
+
+#### houdini visualize scene:
+
+* green is focus_plane
+* white scatter points is lens_radius(actually is lens_radius / 2, in camera constructor: ```lensRadius = aperture / 2;```)
+
+![image](CP_13_defocus/HouSceneVisualize.png)
+
+
