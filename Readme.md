@@ -4,6 +4,12 @@
 * high performance rendering with threading blocks & std::async
 * C++ faster random engine with CRTP + singleton
 
+![image](CP_14_final_scene/image.jpg)
+
+render dt: 1602s
+width: 1280 
+samples:200
+
 ### CP_04_sphere_normal_hittable
 
 
@@ -158,4 +164,11 @@ all scene:
 
 ![image](CP_13_defocus/HouSceneVisualize.png)
 
+
+
+## CP_14_final_scene
+
+![image](CP_14_final_scene/image.jpg)
+
+render dt:1602s
 
