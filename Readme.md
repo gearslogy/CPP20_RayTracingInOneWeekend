@@ -75,3 +75,58 @@ vfov:45
 vfov:90
 
 ![image](CP_11_fov/vfov90.jpg)
+
+## CP_12_lookfrom_lookat
+
+![image](CP_12_lookfrom_lookat/image.jpg)
+
+we can visualize all the scene in hou grandpa :
+
+* white is look from point
+* green is look to point
+* middle is viewport
+
+![image](CP_12_lookfrom_lookat/lookat.png)
+
+viewport vex code: unit_disk_xy_sample.hip , defocus project also need this to visualize.
+```c++
+float aspectWHRatio = 16.0 / 9; 
+float theta = radians(90);
+float h = tan(theta/2);
+float viewPortHeight = 2.0 * h;
+float viewPortWidth = aspectWHRatio * viewPortHeight;
+
+printf("height:%d\n",viewPortHeight);
+printf("width:%d\n",viewPortWidth);
+
+vector look_from = chv("look_from");
+vector look_at   = chv("look_to");
+float lens_radius = chf("lens_radius");
+
+vector vup = set(0,1,0);
+vector w = normalize(look_from - look_at);
+vector u = normalize(cross(vup, w));
+vector v = cross(w, u);
+
+vector horizontal =  u * viewPortWidth ;
+vector vertical =  v * viewPortHeight;
+
+vector lower_left_cornel = look_from - horizontal/2 - vertical/2 - w;
+addpoint(geoself(), lower_left_cornel);//0
+
+
+vector leftUpPos = lower_left_cornel + horizontal *0 + vertical*1 ; 
+addpoint(geoself(), leftUpPos);//1
+
+
+vector rightPos = lower_left_cornel + horizontal *1 + vertical*0 ;
+addpoint(geoself(), rightPos);//2
+
+vector rightPos2 = lower_left_cornel + horizontal *1 + vertical*1  ;
+addpoint(geoself(), rightPos2);//3
+```
+
+all scene:
+
+![image](CP_12_lookfrom_lookat/scene.png)
+
