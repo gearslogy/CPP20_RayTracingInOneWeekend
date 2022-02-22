@@ -3,11 +3,19 @@
 * progress wip
 * high performance rendering with threading blocks & std::async
 * C++ faster random engine with CRTP + singleton
+* mixture raytracing + raymarching
 
 ![image](CP_14_final_scene/image.jpg)
 
-render dt: 1602s
-width: 1280 
+rendering dt: 1602s
+width: 1280
+samples:200
+
+
+![image](CP_15_SDF_MandelBulb/image.jpg)
+
+mixture rendering dt: 50min
+width: 1280
 samples:200
 
 ### CP_04_sphere_normal_hittable
@@ -171,4 +179,13 @@ all scene:
 ![image](CP_14_final_scene/image.jpg)
 
 render dt:1602s
+
+
+
+## CP_15_RaytracingSphereSDF
+
+* ray sdf object(sphere + mandelbulb)
+* raymarching + raytracing mixture rendering
+
+![image](CP_15_SDF_MandelBulb/image.jpg)
 
