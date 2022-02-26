@@ -4,6 +4,7 @@
 * high performance rendering with threading blocks & std::async
 * C++ faster random engine with CRTP + singleton
 * mixture raytracing + raymarching
+* stb jpg io
 
 ![image](CP_14_final_scene/image.jpg)
 
@@ -188,4 +189,12 @@ render dt:1602s
 * raymarching + raytracing mixture rendering
 
 ![image](CP_15_SDF_MandelBulb/image.jpg)
+
+
+## CP_16_rayPlane
+![image](CP_16_ray_plane/plane.png)
+
+![image](CP_16_ray_plane/image.jpg)
+
+
 
